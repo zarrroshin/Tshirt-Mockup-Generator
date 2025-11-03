@@ -1,0 +1,74 @@
+# ============================================
+
+# .gitignore for Tshirt-Mockup-Generator
+
+# Django + DRF + Celery + Redis + Pillow
+
+# ============================================
+
+# Python cache files
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+
+venv/
+.venv/
+
+# Django stuff:
+
+*.log
+*.pot
+*.pyc
+*.py~
+*.sqlite3
+db.sqlite3
+
+# Media and static files
+
+/media/
+staticfiles/
+static/
+
+# Redis dump files
+
+dump.rdb
+
+# Celery beat schedule file
+
+celerybeat-schedule
+celerybeat.pid
+
+# IDE & editor settings
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific files
+
+.DS_Store
+Thumbs.db
+
+# Environment variables
+
+.env
+.env.*
+
+# Coverage, testing, build
+
+htmlcov/
+.coverage
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+sdist/
+develop-eggs/
+pip-wheel-metadata/
+MANIFEST
