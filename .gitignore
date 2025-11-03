@@ -30,7 +30,6 @@ db.sqlite3
 
 /media/
 staticfiles/
-static/
 
 # Redis dump files
 
