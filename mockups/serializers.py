@@ -4,4 +4,4 @@ from .models import Mockup
 class MockupSerializer(serializers.ModelSerializer):
     class Meta:
         model = Mockup
-        fields = '__all__'
+        fields = ['id', 'text', 'image', 'created_at']
