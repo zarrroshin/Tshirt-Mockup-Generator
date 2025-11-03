@@ -1,0 +1,49 @@
+# =============================
+
+# Tshirt-Mockup-Generator
+
+# Django + DRF + Celery + Redis + Pillow
+
+# =============================
+
+# Core Framework
+
+Django==5.2.7                   # Web framework for building the backend
+djangorestframework==3.16.1     # For creating RESTful APIs
+
+# Async Task Management
+
+celery==5.5.3                   # Distributed task queue for background jobs
+redis==5.1.1                    # Redis server client (Celery broker + result backend)
+
+# Image Processing
+
+Pillow==10.4.0                  # For generating mockup images and drawing text
+
+# Celery Dependencies
+
+amqp==5.3.1                     # Advanced Message Queuing Protocol
+billiard==4.2.2                 # Multiprocessing support used by Celery
+kombu==5.5.4                    # Messaging library for Celery
+vine==5.1.0                     # Promise library used internally by Celery
+
+# Django Internals
+
+asgiref==3.10.0                 # ASGI support for async Django features
+sqlparse==0.5.3                 # SQL formatting for Django ORM
+tzdata==2025.2                  # Time zone database for Django
+
+# Utilities
+
+python-dateutil==2.9.0.post0    # Extended date/time handling
+six==1.17.0                     # Python 2 and 3 compatibility layer
+packaging==25.0                 # Version and dependency management
+
+# Optional (for interactive shell)
+
+click==8.3.0                    # Command-line interface library
+click-didyoumean==0.3.1
+click-plugins==1.1.1.2
+click-repl==0.3.0
+prompt_toolkit==3.0.52          # Interactive shell utilities
+wcwidth==0.2.14                 # Character width calculation (for prompt_toolkit)
