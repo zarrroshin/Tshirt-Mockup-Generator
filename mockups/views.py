@@ -13,15 +13,28 @@ def hello(request):
 
 @api_view(['POST'])
 def generate_mockup_view(request):
-    text = request.data.get('text', '')
-    if not text:
-        return Response({"error": "متن اجباری است."}, status=400)
+    """
+    POST /api/mockups/generate/
+    {
+        "text": "Hello World",
+        "font": "arial.ttf",          // optional
+        "text_color": "#FFFFFF",      // optional
+        "shirt_color": ["white", "black"] // optional
+    }
+    """
+    text = request.data.get('text')
+    font = request.data.get('font')
+    text_color = request.data.get('text_color')
+    shirt_colors = request.data.get('shirt_color')
 
-    task = generate_mockup.delay(text)
+    if not text:
+        return Response({"error": "Field 'text' is required."}, status=400)
+
+    task = generate_mockup.delay(text=text, font_name=font, text_color=text_color, shirt_colors=shirt_colors)
     return Response({
         "task_id": task.id,
         "status": "PENDING",
-        "message": "در حال ساخت تصویر..."
+        "message": "Image generation started."
     })
 
 
