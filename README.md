@@ -220,7 +220,8 @@ Response example:
 ```
 
 ---
-<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/bc08d248-041a-44db-bf14-be71ad54afe8" />
+![Uploading image.png…]()
+
 
 
 ## 🐳 Optional: Docker (brief)
