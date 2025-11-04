@@ -129,7 +129,7 @@ Open API root at: `http://127.0.0.1:8000/`
 
 ### 1) Generate mockup (async)
 
-**POST** `/api/v1/mockups/generate/`
+**POST** `/api/mockups/generate/`
 
 Request body (JSON):
 
@@ -159,7 +159,7 @@ Response:
 
 ### 2) Get task status and results
 
-**GET** `/api/v1/tasks/{task_id}/`
+**GET** `/api/tasks/{task_id}/`
 
 Response (when succeeded):
 
@@ -191,7 +191,7 @@ If task is pending/started/failed, `status` will reflect that and `results` will
 
 ### 3) Mockup history (list)
 
-**GET** `/api/v1/mockups/`
+**GET** `/api/mockups/`
 
 Supports:
 
