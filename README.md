@@ -84,40 +84,15 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. **Configure environment variables (recommended)**
-   Create a `.env` or export variables. Minimal:
 
-```bash
-export DJANGO_SECRET_KEY='your-secret'
-export DEBUG=1
-export REDIS_URL='redis://localhost:6379/0'
-```
-
-If you don't use env vars, ensure `config/settings.py` has:
-
-```python
-CELERY_BROKER_URL = 'redis://localhost:6379/0'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
-```
-
-5. **Place base images**
-   Put base T-shirt PNGs (transparent background recommended) into:
-
-```
-mockups/static/mockups/
-```
-
-Required filenames (example):
-`black.png`, `blue.png`, `white.png`, `yellow.png`
-
-6. **Migrate database**
+4. **Migrate database**
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-7. **Create media directory**
+5. **Create media directory**
 
 ```bash
 mkdir -p media/mockups
@@ -140,7 +115,7 @@ sudo systemctl start redis-server
 celery -A config worker -l info
 ```
 
-**Start Django server**:
+**Start Django server second terminal venv active**:
 
 ```bash
 python manage.py runserver
