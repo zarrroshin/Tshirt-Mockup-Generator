@@ -220,7 +220,8 @@ Response example:
 ```
 
 ---
-![Uploading image.png…]()
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/cce8919d-1c33-45b1-aa19-44c7a1bb124b" />
+
 
 
 
