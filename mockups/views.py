@@ -6,7 +6,7 @@ from rest_framework import generics,filters
 from .models import Mockup
 from .serializers import MockupSerializer
 from rest_framework.pagination import PageNumberPagination
-
+import os
 @api_view(['GET'])
 def hello(request):
     return Response({"message": "سلام زهرا 👋 پروژه با موفقیت کار می‌کنه!"})
