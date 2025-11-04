@@ -67,7 +67,7 @@ Tshirt-Mockup-Generator/
 1. **Clone repo**
 
 ```bash
-git clone https://github.com/<your-username>/Tshirt-Mockup-Generator.git
+git clone https://github.com/zarrroshin/Tshirt-Mockup-Generator.git
 cd Tshirt-Mockup-Generator
 ```
 
